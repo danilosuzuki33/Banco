@@ -1,0 +1,221 @@
+/* ELEMENTOS TEXTUAIS */
+.texto-fade-baixo{
+  opacity: 0;
+  transform: translateY(2em);
+  transition: transform 4s .25s cubic-bezier(0,1,0.3,1), opacity .3s .25s ease-out;
+  will-change: transform, opacity;
+}
+
+.texto-fade-baixo.is-visible{
+  transform: none;
+  opacity: 1;
+}
+
+
+.texto-fade-topo{
+  opacity: 0;
+  transform: translateY(-2em);
+  transition: transform 4s .25s cubic-bezier(0,1,0.3,1), opacity .3s .25s ease-out;
+  will-change: transform, opacity;
+}
+
+.texto-fade-topo.is-visible{
+  transform: none;
+  opacity: 1;
+}
+
+
+.texto-fade-direita{
+  opacity: 0;
+  transform: translateX(2em);
+  transition: transform 4s .25s cubic-bezier(0,1,0.3,1), opacity .3s .25s ease-out;
+  will-change: transform, opacity;
+}
+
+.texto-fade-direita.is-visible{
+  transform: none;
+  opacity: 1;
+}
+
+.texto-fade-esquerda{
+  opacity: 0;
+  transform: translateX(-2em);
+  transition: transform 4s .25s cubic-bezier(0,1,0.3,1), opacity .3s .25s ease-out;
+  will-change: transform, opacity;
+}
+
+.texto-fade-esquerda.is-visible{
+  transform: none;
+  opacity: 1;
+}
+
+
+/* ELEMENTOS DO RODAPE */
+
+.elemento-animado-rodape{
+  opacity: 0;
+  transform: translateY(-2em);
+  transition: transform 2s .25s cubic-bezier(0,1,0.3,1), opacity .3s .25s ease-out;
+  will-change: transform, opacity;
+}
+
+.elemento-animado-rodape.is-visible{
+  transform: none;
+  opacity: 1;
+}
+
+.elemento-animado-rodape2{
+  opacity: 0;
+  transform: translateY(-2em);
+  transition: transform 2s .25s cubic-bezier(0,1,0.3,1), opacity .3s .25s ease-out;
+  will-change: transform, opacity;
+}
+
+.elemento-animado-rodape2.is-visible{
+  transform: none;
+  opacity: 1;
+}
+
+.elemento-animado-rodape3{
+  opacity: 0;
+  transform: translateY(-2em);
+  transition: transform 2s .25s cubic-bezier(0,1,0.3,1), opacity .3s .25s ease-out;
+  will-change: transform, opacity;
+}
+
+.elemento-animado-rodape3.is-visible{
+  transform: none;
+  opacity: 1;
+}
+
+
+/* FOTOS ANIMADAS*/
+
+.foto-animada-fade{
+  opacity: 0;
+  transform: translateY(-2em) rotateZ(-2deg);
+  transition: transform 4s .25s cubic-bezier(0,1,0.3,1), opacity .3s .25s ease-out;
+  will-change: transform, opacity;
+}
+
+.foto-animada-fade.is-visible{
+  transform: none;
+  opacity: 1;
+}
+
+
+
+/* Animações fixas - sem scroll*/
+
+.nav-link-custom {
+  display: block;
+  padding: 0rem;
+}
+
+.nav-item-animado{
+  transform: translateY(0em);
+  transition: transform .25s 0s cubic-bezier(0,1,0.3,1);
+  will-change: transform;
+}
+
+.nav-item-animado:hover{
+  transform: translateY(-0.2em);
+}
+
+#topo{
+
+min-height: 100px;
+background-color: #204d74;
+color: #fff;
+    
+}
+
+#bloco_login_adm{
+  background-color: #fff;
+  border-radius: 15px;
+  margin: 20px;
+  padding: 30px;    
+     
+ }
+
+#rodape{
+     
+ min-height: 150px;
+ background-color: #204d74;  
+color: #fff; 
+padding-top:30px;
+    
+}
+
+#conteudo{
+    
+   min-height: 450px; 
+}
+
+#lateral{
+    
+   border-right: 1px solid #adadad;
+   height: 100%;
+  }
+
+  .transparente{
+   opacity: 0.9;   
+      
+  }
+
+
+/* CLASSES OVERRIDE DO BOOTSTRAP para personalização*/
+
+/* navbar e menu navbar */
+.navbar-inverse{
+    border-radius: 0;
+    
+}
+
+
+.navbar-inverse .navbar-nav > li > a{
+    
+  color: #fff;
+  font-size: 16px;  
+    
+}
+.navbar-inverse .navbar-nav > li > a:hover{
+    
+ background-color: transparent;
+ border-radius: 10px;
+ color: #eb9316;
+    
+}
+
+/* menu lateral com list group*/
+
+.list-group-item.active, .list-group-item.active:focus, .list-group-item.active:hover{
+    
+   background-color: #101010; 
+    
+}
+
+a.list-group-item:hover{
+    
+    background-color: #262626;;
+     color: #FFF;
+     
+    
+}
+
+a.list-group-item{
+  
+    border: 0;
+    font-size: 16px;
+    
+    
+}
+
+.thumbnail{
+  border-radius: 15px;
+  box-shadow: 6px 6px 10px #adadad; 
+}
+
+.espacamento{
+  margin-left: 15px;
+}
